@@ -9,13 +9,19 @@ P = int(Width)*2 + int(Height)*2
 print(f"Area={S}m^2, Perimeter={P}m")
 print("Area/Perimeter = " + str(P / S))
 
-Age= int(input("Enter your age:")) #dav №3
+"""Age= int(input("Enter your age:"))        (manamde maq gasuli es masala ar gadaviwere)
 if (Age) < 18:
     print("შესვლა აკრძალულია")
 else:
-    print("Processing Data...")
+    print("Processing Data...")"""
+
+#input-vtxovt moxmareblebs garkveuli informaciis shemotanas
+#output-yvelaferi rac terminalshi gamodis
 
 num1 = int(input("Enter a random number1:")) #dav №4
 num2 = int(input("Enter a random number2:")) 
 print(f"ჯამი: {num1 + num2}, სხვაობა: {num1 - num2}, ნამრავლი: {num1 * num2}, განაყოფი: {num1 / num2}")
+
+
+
  
