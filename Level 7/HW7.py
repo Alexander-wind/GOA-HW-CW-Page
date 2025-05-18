@@ -19,9 +19,11 @@ while a != z:                                   # ეს გაგრძელ�
 
 print('Password is correct')
 
-b=input('Enter a number: ')  #5
-c=1
-b=int(b)         
-while c<=b:
-    print(c)
-    c=c+1      
+b = int(input('Enter a number: '))  #5 
+c = 1
+sum = 0
+while c <= b:
+    sum += c
+    c += 1
+print(sum)     
+    
