@@ -6,7 +6,7 @@ while b<10:
     print("loop")
     b+1"""
 
-"""while 4<10: #თავი                 #3
+"""while 4<10: #თავი                 #3 .
     print("lalolo") #ტანი
 """
 
