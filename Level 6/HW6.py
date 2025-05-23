@@ -1,33 +1,29 @@
-#sequence-რაღაცის თანმიმდევრობით სვლა
-#iteration-რაღაცის გამეორება სანამ რაღაც შეიცვლება
-#selection-არჩევა
+x=1                #1
+while x<=10:
+    print(x)
+    x=x+1
 
-#algorithm-ინსტრუქცია, თუ რა როგორ უნდა გავაკეთოთ
-#print(True or False and False or True and False or False and False or False and True and False or True) რა გამოვა?
-#print(5 > 10 or 7 * 7 / 7 == 7 and False or True and "1234" != "1234" and 7 + 3 * 3 + 1 == 15 and True and True or 100 > 100 or True) რა გამოვა?
+y=10                #2
+while y>=1:
+    print(y)
+    y=y-1
 
-x=int(input("input a number"))
-if x % 2 == 0 or x>10 or x==7:
-    print("True")
+#while loop-პროცესი რომელიც მიმდინარეობს მანამ სანამ მოცემული პირობა შეიცვლება, თუ არა და ის სამუდამოდ გაგრძელდება   #3
 
-print(12-1)
-print(12+3)
-print(12*5)
+z = 'python123'                                 #4 აქ, როდესაც თავიდან მომხმარებელი წერს პაროლს, და ის არ შეესაბამება,   
+a = input('Input a password: ')                 # იმის შემდეგ რაც Password is incorrect დაიპრინტება,
+                                                # პროგრამა მას თავიდან სტხოვს მას თვით while loopში და თავიდან აწერინებს.  
+while a != z:                                   # ეს გაგრძელდება სანამ ის არ შეიყვანს სწორ პაროლს
+    print('Password is incorrect')
+    a = input('Try again: ')
 
-print("dato"*3)
-print("niko" + "niko")
-print("niko" * 8)
+print('Password is correct')
 
-print(9.81 * 10.2)
-print(12.43 / 3.2)
-print(12.43 - 3.2)
-
-a=int(input("input a number"))
-print(a>=10)
-print(a<=1)
-print(a==1)
-
-c=int(input("input a year"))
-
-if c % 4 == 0 and c % 100 != 0 or c % 400 == 0:
-    print("This is a leap year")
+b = int(input('Enter a number: '))  #5 
+c = 1
+sum = 0
+while c <= b:
+    sum += c
+    c += 1
+print(sum)     
+    

@@ -1,17 +1,27 @@
-Name = "Alex"
-Surname = "Kamashidze"
-Age = "13"
+user_name = input("Enter your name:") #dav №1
+user_age = input("Enter your age:")
+print(f"Name: {user_name}, Age: {user_age}")
 
-print("Hello, my name is " + Name + " " + Surname + ". I am " + Age + " years old.")
+Width = input("Enter a random number(width):") #dav №2
+Height = input("Enter a random number(height):")
+S = int(Width) * int(Height)
+P = int(Width)*2 + int(Height)*2
+print(f"Area={S}m^2, Perimeter={P}m")
+print("Area/Perimeter = " + str(P / S))
 
-digit1 = 15
-digit2 = 432
-digit3 = 25
-digit4 = 3
-digit5 = 45
+"""Age= int(input("Enter your age:"))        (manamde maq gasuli es masala ar gadaviwere)
+if (Age) < 18:
+    print("შესვლა აკრძალულია")
+else:
+    print("Processing Data...")"""
 
-print(digit1 + digit2)
-print(digit3 / digit4)
-print(digit5 - digit1)
-print(digit2 * digit3)
-print(digit1 + digit2 - digit3 * digit4 / digit5)
+#input-vtxovt moxmareblebs garkveuli informaciis shemotanas
+#output-yvelaferi rac terminalshi gamodis
+
+num1 = int(input("Enter a random number1:")) #dav №4
+num2 = int(input("Enter a random number2:")) 
+print(f"ჯამი: {num1 + num2}, სხვაობა: {num1 - num2}, ნამრავლი: {num1 * num2}, განაყოფი: {num1 / num2}")
+
+
+
+ 
