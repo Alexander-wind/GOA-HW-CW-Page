@@ -16,7 +16,7 @@ Name = "Alex"
 surname = "Kamashidze"
 age = "20"
 hobby = "programming"
-print(f"My name is {Name} and my surname is {surname}.  I am {age} years old. My hobby is {hobby}.")
+print(f"My name is {Name} and my surname is {surname}.  I am {age} years old. My hobby is {hobby}.") .
 """
 
 #CW damoukidebeli
