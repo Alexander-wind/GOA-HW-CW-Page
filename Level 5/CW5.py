@@ -6,7 +6,7 @@
 print(3 > 4) #boolean
 name = "Alex" #boolean
 print(3 != 4) #boolean
-4 ** 2 #integer
+4 ** 2 #integer .
 """
 """print("hello world"[0]) #string"""
 
