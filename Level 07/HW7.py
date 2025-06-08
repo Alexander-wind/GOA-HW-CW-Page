@@ -8,7 +8,7 @@ for i in range(0,5,1):
     print(y)
 
 z=0
-for i in range(-1, 20, 2):
+for i in range(-1, 10, 2):
     print(z)
     z+=2
 
