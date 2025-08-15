@@ -1,0 +1,56 @@
+<!--მინი ექსკურსიის განაცხადი
+სკოლაში იქნება პატარა გასეირნება. შექმენი ფორმა განაცხადისთვის.
+
+უნდა ჰქონდეს:
+
+სახელი და გვარი
+
+რომელ კლასში ხარ?
+
+გინდა წასვლა? (radio – კი / არა)
+
+გინდა წამოიღო საჭმელი? (checkbox)
+
+მშობლის ტელეფონის ნომერი
+
+ღილაკი: „დადასტურება“-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter your name and surname 
+            <input type="text" name="name"placeholder="Enter your name & surname">
+        </label>
+        <br>
+        <br>
+        <label>Which grade are you in 
+            <input type="number" name="grade" placeholder="Which grade are you in">
+        </label>
+        <br>
+        <br>
+        <label>Are you going?
+            <input type="radio" name="go" value="yes"><label for="yes">yes</label>
+            <input type="radio" name="go" value="no"><label for="no">no</label>
+        </label>
+        <br>
+        <br>
+        <label>Do you want to bring along lunch? 
+            <input type="checkbox" name="lunch">
+        </label>
+        <br>
+        <br>
+        <label>Your guardian's phone number:
+            <input type="number" name="phone">
+        </label>
+        <br>
+        <br>
+        <button>Confirm</button>
+    </form>
+</body>
+</html>

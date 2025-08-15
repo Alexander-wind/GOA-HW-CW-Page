@@ -1,0 +1,48 @@
+<!--შექმენი პატარა ფორმა, სადაც ბავშვი პასუხობს როგორ იკვებება.
+
+უნდა ჰქონდეს:
+
+შენი სახელი
+
+დღის რომელ საკვებს ყველაზე ხშირად ჭამ? (text input)
+
+სვამ თუ არა წყალს დღეში 5-ჯერ ან მეტჯერ? (radio – კი / არა)
+
+გიყვარს ბოსტნეული? (radio – კი / არა)
+
+ღილაკი: „გაგზავნა“
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Your name 
+            <input type="text" name="name">
+        </label>
+        <br>
+        <br>
+        <label>Throughout the day, when do you eat the most? 
+            <input type="text" name="time">
+        </label>
+        <br>
+        <br>
+        <label>Do you drink 5+ glasses of water daily? 
+            <input type="text" name="drink">
+        </label>
+        <br>
+        <br>
+        <label>Do you like vegetables? 
+            <input type="radio" name="eat"value="yes"><label for="yes">yes</label>
+            <input type="radio" name="eat" value="no"><label for="no">no</label>
+        </label>
+        <br>
+        <br>
+        <button>Send</button>
+    </form>
+</body>
+</html>
