@@ -1,0 +1,17 @@
+#d1 { 
+    background-color: bisque;
+    border: 30px solid crimson;
+    margin: 15px;
+}
+
+#d2 {
+    background-color: aqua;
+    border: 30px solid salmon;
+    margin: 15px;
+}
+
+#d3 {
+    background-color: chartreuse;
+    border: 30px solid chocolate;
+    margin: 15px;
+}

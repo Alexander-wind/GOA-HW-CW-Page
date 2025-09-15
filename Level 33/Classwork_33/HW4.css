@@ -1,0 +1,27 @@
+#p1 {
+    padding: 20px;
+    background-color: aquamarine;
+    border: 5px solid green;
+    margin: 25px;
+}
+
+#p2 {
+    padding: 20px;
+    background-color: bisque;
+    border: 5px solid orange;
+    margin: 25px;
+}
+
+#p3 {
+    padding: 20px;
+    background-color: beige;
+    border: 5px solid yellow;
+    margin: 25px;
+}
+
+#p4 {
+    padding: 20px;
+    background-color: pink;
+    border: 5px solid palevioletred;
+    margin: 25px;
+}
