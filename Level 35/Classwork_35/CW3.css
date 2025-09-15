@@ -1,0 +1,15 @@
+h1 {
+    color: red; /*ფერი*/
+    text-align: center; /*აცენტრებს*/
+}
+
+button {
+    background-color: dodgerblue; /*ფონს აძლევს*/
+    color: white; /*ფერი*/
+    border-radius: 15px; /*კუთხებს ამრგვალებს*/
+}
+
+p {
+    color: grey; /*ფერი*/
+    font-size: 18px; /*ტექსტის ზომა*/
+}
