@@ -1,0 +1,82 @@
+<!-- შექმენით html ის გერდი სასურელ თემაზე ერთ გვერდიანი საითი სადაც გამოიყენებთ ყველა ნასწავლ თეგს და ასევე style ატრიბუტის დახმარებით 
+მიცემთ ფერს ზომას და ასე შემდეგ..
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            width: 300px;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        section {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>ჩემი მაღაზია</h1>
+    <nav>
+        <section>
+            <a href="#sec1">პური</a>
+        </section>
+        <section>
+            <a href="#sec2">ტკბილეული</a>
+        </section>
+        <section>
+            <a href="#sec3">გამაგრილებელი სასმელი</a>
+        </section>
+    </nav>
+    <hr>
+    <form>
+        <section id="sec1">
+            <img src="https://ichef.bbc.co.uk/ace/standard/1600/food/recipes/paul_hollywoods_crusty_83536_16x9.jpg.webp" alt="">
+            <br>
+            <label for="">პური
+                <select name="" id="">
+                    <option value="">--აირჩიე--</option>
+                    <option value="შავი">შავი</option>
+                    <option value="თეთრი">თეთრი</option>
+                    <option value="შოთი">შოთი</option>
+                </select>
+        </section>
+        <br>
+        <br>
+        <section id="sec2">
+            <img src="https://www.whitakerschocolates.com/cdn/shop/articles/The-History-of-Chocolate-Bars1.jpg?v=1715958838" alt="" >
+            <br>
+            </label>
+            <label for="">ტკბილეული
+                <select name="" id="">
+                    <option value="">--აირჩიე--</option>
+                    <option value="სნიკერსი">სნიკერსი</option>
+                    <option value="ტვიქსი">ტვიქსი</option>
+                    <option value="ბაუნტი">ბაუნტი</option>
+                </select>
+            </label>
+        </section>
+        <br>
+        <section id="sec3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFg8xAxADTOXto6UntGguvQ8VOI9eNlDg9w&s" alt="">
+            <br>
+            <label for="">გამაგრილებელი სასმელი
+                <select name="" id="">
+                    <option value="">--აირჩიე--</option>
+                    <option value="კოლა">კოლა</option>
+                    <option value="ფანტა">ფანტა</option>
+                    <option value="სპრაიტი">სპრაიტი</option>
+                </select>
+            </label>
+        </section>
+    </form>
+</body>
+</html>

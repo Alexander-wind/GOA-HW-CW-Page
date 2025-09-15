@@ -1,0 +1,117 @@
+<!-- შექმენით გვერდი რესტორანის მენიუსთვის, რომელიც იქნება გადანაწილებული კატეგორიებად (მაგალითად, სადილები, ძირითადი კერძები, დესერტები და ა.შ). თქვენი დავალებაა დაყოთ ეს კატეგორიები სექციებად და ქვე სექციებად.(მაგალითად: ძირითადი კერძების სექციაში გააკეთეთ რამოდენიმე კერძის სექცია, სადაც ისაუბრებთ კონკრეტულ კერძებზე) გამოიყენეთ ფოტოები და აღწერეთ თითოეული კერძი.
+
+ეს საიტი აუცილებლად უნდა იყოს სწორი სტრუქტურით დალაგებული(ამისათვის დაგჭირდებათ შემდეგი სემატიკური დეგები: header, main, section, footer) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            width: 150px;
+        }
+
+        hr {
+            border: 3px dotted black
+        }
+
+        body {
+            background-color:burlywood;
+        }
+
+        li {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>რესტორნის მენიუ</h1>
+        <h4>ანგარიშს მთელი სუფრის 10% დაემატება</h4>
+        <nav>
+            <section>
+                <a href="#sec1">სადილები</a>
+            </section>
+            <section>
+                <a href="#sec2">ძირითადი კერძები</a>
+            </section>
+            <section>
+                <a href="#sec3">დესერტი</a>
+            </section>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section id="sec1">
+            <h3>სადილები</h3>
+            <ul>
+                <li>ფაფა 200გ 7ლ</li>
+                <br>
+                <img src="https://scottishscran.com/wp-content/uploads/2023/06/Porridge-1200-5-735x490.jpg" alt="">
+                <br>
+                <li>ბოსტნეულის სალათი 300გ 12ლ</li>
+                <br>
+                <img src="https://cdn.jwplayer.com/v2/media/wGEqBtuf/thumbnails/qSXwlEH3.jpg?width=1280" alt="">
+                <br>
+                <li>შემწვარი კვერცხი 80გ 2ლ</li>
+                <br>
+                <img src="https://thai-foodie.com/wp-content/uploads/2025/03/thai-fried-eggs-1.jpg" alt="">
+            </ul>
+        </section>
+        <section id="sec2">
+            <h3>ძირითადი კერძები</h3>
+            <ul>
+                <li>ხინკალი ქალაქური/მთიულური 65გ 90თ</li>
+                <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQQ98EROt0RZCcYXzs8eiMzpFEunsmNrR1g&s" alt="">
+                <br>
+                <li>ქაბაბი 130გ 8ლ</li>
+                <br>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/13/d6/df/29/kababi.jpg" alt="">
+                <br>
+                <li>ხაჭაპური 500გ 17ლ</li>
+                <br>
+                <img src="https://www.saveur.com/uploads/2018/11/20/VW6J76DATFDQVDRX5YV55WOXME.jpg?format=auto&optimize=high&width=1440" alt="">
+            </ul>
+        </section>
+        <section id="sec3">
+            <h3>დესერტი</h3>
+            <ul>
+                <li>შოკოლადის ნამცხვარი 400გ 30ლ</li>
+                <br>
+                <img src="https://ichef.bbc.co.uk/ace/standard/1600/food/recipes/easy_chocolate_cake_31070_16x9.jpg.webp" alt="">
+                <br>
+                <li>ბლინი 75გ 1.5ლ</li>
+                <img src="https://www.andy-cooks.com/cdn/shop/articles/20240619074934-andy-20cooks-20-20fluffy-20pancakes-20recipe_abeb50a7-5c13-40b9-a186-a10e3818b1c6.jpg?v=1719271389" alt="">
+                <br>
+                <li>ნამცხვარი 90გ 3ლ</li>
+                <br>
+                <img src="https://www.allrecipes.com/thmb/i9KCEbxUGQ1Sa4F7Gts7SGBOpoM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/157877-vanilla-cupcakes-ddmfs-4X3-0397-59653731be1d4769969698e427d7f5bc.jpg" alt="">
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>ინტერნეტის პაროლია: 1223334444</p>
+        <p>დაგვიკავშირდით +995 123 456 789 ან restorani2025@gmail.com - ზე</p>
+    </footer>
+</body>
+</html>
