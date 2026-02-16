@@ -1,0 +1,11 @@
+/* ახსენით auto და გააკეთეთ 2 მაგალითი */
+
+/* tviton wyvets unda tu ara elements asqrolva. tu dzalian didia/grdzelia scrollad xdis, tuara da igived tovebs */
+
+img {
+    overflow: auto;
+}
+
+.img12 {
+    overflow: auto;
+}

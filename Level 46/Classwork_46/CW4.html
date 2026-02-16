@@ -1,0 +1,28 @@
+<!-- შექმენით დივი სადაც იქნება ერთ იდივი რომელიც გადასული იქნება ზღვარს, თქვენი დავალებაა გადასულ ნაწილზე გააკეთოთ scrollbar -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #item {
+            position: absolute;
+            overflow: scroll;
+            height: 400px;
+            width: 400px;
+        }
+        #container {
+            position: fixed;
+            width: 250px;
+            height: 250px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="item"><img src="https://hips.hearstapps.com/hmg-prod/images/big-mac-index-66574ee4103a5.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=1200:*" alt=""></div>
+    <div id="container"></div>
+</body>
+</html>

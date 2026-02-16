@@ -1,0 +1,11 @@
+/* ახსენით overflow-x და overflow-y და გააკეთეთ 2 მაგალითი */
+
+/* calk calke ganixilavs abscisa da ordinatas mxareebs rogor gaumklavdes */
+
+img {
+    overflow-y: auto;
+}
+
+.img12 {
+    overflow-x: scroll;
+}

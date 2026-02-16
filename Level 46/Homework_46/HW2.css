@@ -1,0 +1,11 @@
+/* ახსენით visible, და გააკეთეთ 2 მაგალითი */
+
+/* visible aris overflow-is sawyisi varianti. overflow rom ar gamogveyenebina elementi mainc visible iqneboda */
+
+img {
+    overflow: visible;
+}
+
+.img12 {
+    overflow: visible;
+}
