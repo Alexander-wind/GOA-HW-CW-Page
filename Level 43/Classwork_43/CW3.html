@@ -1,0 +1,39 @@
+<!-- შექმენი სამი div.
+
+ერთ-ერთს მიეცი:position: absolute;
+top: 0;
+left: 0;
+დააკვირდი, როგორ გადადის ეკრანის ზედა კუთხეში და აღარ ითვალისწინებს სხვებს.
+
+ახსენი რატომ (absolute მიყვება body-ს ან უახლოეს relative parent-ს). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sta {position: static;
+            height: 100px;
+            width: 100px;}
+        
+        .absol {position: absolute;
+            top: 0px;
+            left: 0px}
+    </style>
+</head>
+<body>
+    <div class="sta">
+        <p style="background-color: blueviolet;">Hello</p>
+    </div>
+    <div class="absol">
+        <p style="background-color: brown;">This is my website</p>
+    </div>
+    <div class="sta">
+        <p style="background-color: blue;">My favorite fruit is Mangosteen</p>
+    </div>
+    <!-- absolutis mdebareoba damokidebulia mis mshobel boqsze, romelic yvela poziciaa static is garda.
+     am shemtxvevashi static is garda araa sxva posicia, amitom mshobeli body xdeba -->
+</body>
+</html>
