@@ -1,0 +1,28 @@
+<!-- შექმენი ინტერაქტიული ბარათების სექცია, სადაც თითო ბარათი შეიცავს სურათს, სათაურს და ტექსტს.
+როდესაც მაუსით შეეხები ბარათს, სხვადასხვა transform ეფექტები ამოქმედდება:
+გადახრა (skew), გადაადგილება (translate), მოტრიალება (rotate), გაზრდა (scale), და ყველაფერი გლუვად (transition) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #redyellow {
+            height: 50vh;
+            width: 50vh;
+            background-image: url('https://drawingsof.com/wp-content/uploads/2022/12/Red_Yellow_1.png');
+            transition:ease 1s;
+            transform: skew(3deg);
+        }
+        #redyellow:hover {
+            background-image: url('https://cdn11.bigcommerce.com/s-3uewkq06zr/images/stencil/1280x1280/products/238/464/fluorescent_orange__65442.1492527693.png?c=2');
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="redyellow">
+        <center><p>რა ფერი გამოვა წითლისა და ყვითლის შერევის დროს?</p></center> 
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- შექმენი ვებსაიტის სექცია — სურათების გალერეა, სადაც ყოველი "ბარათი" შეიცავს სურათს და ტექსტს.
+როდესაც მომხმარებელი მაუსით შეეხება ბარათს:
+
+ბარათი ოდნავ გადმოიწევა (transform),
+
+გადაბრუნდება ან ოდნავ მოტრიალდება,
+
+შეიცვლება მისი ჩრდილი და ფერი (transition),
+
+და შიგნით არსებული ტექსტი ლამაზად გამოჩნდება. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .di {
+            display: inline-block;
+            background-color: dodgerblue;
+            border-radius: 13px;
+            margin: 50px;
+            transition: ease-in 1s, ease-in-out 1.3s;
+        
+        }
+        .di:hover {
+            transform: scale(1.1) rotate(3deg);
+            background-color:darkviolet;
+
+        }
+        p {
+            font-weight: 500;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <div class="di">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIEKy6y3lULpkEQmffQKqmPffJnQxl8O2RIg&s" alt="">
+        <p>The Starry Night</p>
+    </div>
+    <div class="di">
+        <img src="https://www.superprof.ng/blog/wp-content/uploads/2019/05/great-wave-off-kanagawa.jpg" alt="" width="300px">
+        <p>The Waves Of Distress</p>
+    </div>
+</body>
+</html>

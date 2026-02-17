@@ -1,0 +1,28 @@
+<!-- შექმენი ბლოკი, რომელიც hover-ზე გადაადგილდება მარჯვნივ 100px და ოდნავ იხრება, 
+ გამოიყენე transform: translateX(100px) skew(5deg);  დაამატე transition: all 0.5s ease;  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            transition: all 0.5s ease;
+        }
+        div:hover {
+            transform: translateX(200px) skew(5deg) ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
