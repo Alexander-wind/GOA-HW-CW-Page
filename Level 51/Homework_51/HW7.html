@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filling Bar</title>
+
+<style>
+.bar {
+    height: 8px;
+    width: 0%;
+    border: solid black;
+    border-radius: 15px;
+    background-color:crimson;
+    animation: progress 10s infinite ease-in-out;
+    position: relative;
+}
+
+/* percentage text */
+.bar::after {
+    content: '0%';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-weight: 800;
+    animation: count 10s infinite;
+}
+
+@keyframes progress {
+    from { width: 0%; }
+    to { width: 100%;
+    background-color: chartreuse; }
+}
+
+@keyframes count {
+    0% { content: '0%'; }
+    10% { content: '10%'; }
+    20% { content: '20%'; }
+    30% { content: '30%'; }
+    40% { content: '40%'; }
+    50% { content: '50%'; }
+    60% { content: '60%'; }
+    70% { content: '70%'; }
+    80% { content: '80%'; }
+    90% { content: '90%'; }
+    100% { content: '100%'; }
+}
+</style>
+</head>
+
+<body>
+<div class="bar"></div>
+</body>
+</html>

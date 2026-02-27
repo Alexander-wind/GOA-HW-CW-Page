@@ -1,0 +1,31 @@
+<!-- შექმენი ელემენტი რომელიც საიტის (Y ღერძზე) იმოძრავებს მუდმივად -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Y movement</title>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background: aqua;
+        animation: moveY 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes moveY {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(200px);
+        }
+    }
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
