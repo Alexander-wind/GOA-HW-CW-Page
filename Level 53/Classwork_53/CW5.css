@@ -1,0 +1,9 @@
+/* გააკეთე დივი 200px სიმაღლით.
+მიანიჭე ფონი: ფერი გადავიდეს ლურჯიდან თეთრამდე. */
+
+.gradient-div {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(blue, white);
+    margin-top: 20px;
+}

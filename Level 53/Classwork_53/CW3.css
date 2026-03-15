@@ -1,0 +1,9 @@
+/* შექმენი ბლოკი, რომელიც უჭერს 80% ფართის კონტეინერისა და მინიმუმ min-width: 300px; შემდეგ შექმენი ნახევარი ეკრანის სიმაღლე height: 50vh. */
+
+.block {
+    width: 80%;
+    min-width: 300px;
+    height: 50vh;
+    background-color: lightyellow;
+    margin-top: 220px;
+}

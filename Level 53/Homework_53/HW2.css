@@ -1,0 +1,22 @@
+/* შექმენი ორი დივი, ორივე 100×100px.
+მოათავსე ისე, რომ ერთი იყოს მეორეზე ნახევრად.
+დაალაგე ისე, რომ წითელი იყოს ზემოთ. */
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 2;
+}

@@ -1,0 +1,15 @@
+/*  შექმენი დივი, რომელსაც ნაგულისხმევად აქვს ლურჯი ფონი.
+თუ ეკრანის სიგანე 600px-ზე ნაკლებია — ფონი გახდეს წითელი. */
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    div {
+        background-color: red;
+    }
+}

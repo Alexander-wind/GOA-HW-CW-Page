@@ -1,0 +1,11 @@
+/* გააკეთე სურათი, რომელიც დიდ ეკრანზე 400px სიგანისაა, პატარა ეკრანზე კი 200px. */
+
+.responsive-img {
+    width: 400px;
+}
+
+@media (max-width: 600px) {
+    .responsive-img {
+        width: 200px;
+    }
+}

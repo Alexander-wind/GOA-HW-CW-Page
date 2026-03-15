@@ -1,0 +1,14 @@
+/* გააკეთე დივი, რომლის ფერი არის მწვანე.
+თუ ეკრანი 500px-ზე ნაკლებია — გახდეს წითელი */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: green; 
+}
+
+@media (max-width: 500px) {
+    .box {
+        background-color: red;
+    }
+}

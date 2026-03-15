@@ -1,0 +1,7 @@
+/* შექმენი ჰორიზონტალური ბარი 600×80px, რომელიც გადადის: წითელი → ყვითელი (ჩვეულებრივი) → დაახლოებით 60% წერტილამდე. */
+
+.bar {
+    width: 600px;
+    height: 80px;
+    background: linear-gradient(to right, red 0%, yellow 60%);
+    margin-top: 20px; }

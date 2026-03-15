@@ -1,0 +1,10 @@
+/* გააკეთე ღილაკი, რომლის ფონი გადადის მწვანედან ღია მწვანემდე. */
+
+button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(green, lightgreen);
+}

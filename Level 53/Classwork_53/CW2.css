@@ -1,0 +1,29 @@
+/* შექმენი სამი კვადრატი (100×100px), რომლებიც ნაწილობრივ ერთმანეთს ფარავენ. დაალაგე ისე, 
+რომ საშუალონაები (middle) იყოს ზედა, შემდეგ — გამარჯვე (right) და ბოლოს — მარცხნე (left). */
+
+.square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.middle {
+    background-color: green;
+    top: 50px;
+    left: 150px;
+    z-index: 3;
+}
+
+.right {
+    background-color: red;
+    top: 70px;
+    left: 200px;
+    z-index: 2;
+}
+
+.left {
+    background-color: blue;
+    top: 70px;
+    left: 100px;
+    z-index: 1;
+}

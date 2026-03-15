@@ -1,0 +1,8 @@
+/*შექმენი ერთი დივი (200px × 200px).
+გააკეთე ფონი, რომელიც ცენტრიდან თეთრია და გარედან ლურჯი. */
+
+div {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, white, blue);
+    margin-top: 20px; }

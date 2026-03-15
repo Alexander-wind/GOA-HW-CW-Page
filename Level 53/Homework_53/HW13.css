@@ -1,0 +1,12 @@
+/* შექმენი სათაური (h1), რომელიც პატარა ეკრანზე ცენტრში დგას, დიდზე კი მარცხნივ */
+
+.title {
+    text-align: left;  
+}
+
+ 
+@media (max-width: 600px) {
+    .title {
+        text-align: center;  
+    }
+}

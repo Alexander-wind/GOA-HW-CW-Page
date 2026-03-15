@@ -1,0 +1,13 @@
+/* გააკეთე დივი, რომლის სიგანე არის მშობლის 50%. */
+
+.parent {
+    width: 400px;        
+    height: 200px;     
+    background: lightgray;
+}
+
+.child {
+    width: 50%;          
+    height: 100px;
+    background: green;
+}

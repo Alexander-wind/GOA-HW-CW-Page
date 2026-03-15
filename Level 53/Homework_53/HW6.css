@@ -1,0 +1,7 @@
+/* გააკეთე gradient ზოლით მარჯვნიდან მარცხნივ, ლურჯიდან თეთრამდე. */
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, blue, white);
+}
