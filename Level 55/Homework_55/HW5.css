@@ -1,0 +1,15 @@
+/* შექმენით 2 სვეტიანი გრიდი.
+შიგნით მოათავსეთ ტექსტით ყუთები.
+გამოიყენეთ justify-items რომ ტექსტი ჰორიზონტალურად დადგეს. */
+
+.textgrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  justify-items:center;
+  gap:10px;
+}
+
+.box{
+  background:lightcoral;
+  padding:20px;
+}

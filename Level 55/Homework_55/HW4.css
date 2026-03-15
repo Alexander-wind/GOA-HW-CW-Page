@@ -1,0 +1,19 @@
+/* შექმენით გრიდი 2 სვეტით, 4 რიგით.
+პირველი ყუთი იყოს მაღალი, მეორე ნორმალური.
+გამოიყენეთ align-items რომ ყუთები ვერტიკალურად სწორად განლაგდეს. */
+
+.layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:repeat(4,100px);
+  align-items:center;
+  gap:10px;
+}
+
+.box{
+  background:lightgreen;
+}
+
+.tall{
+  height:150px;
+}

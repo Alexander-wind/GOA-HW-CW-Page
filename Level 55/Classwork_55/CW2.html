@@ -1,0 +1,42 @@
+<!-- იგივე 2 სვეტიანი გრიდი.
+
+გამოიყენეთ justify-items სხვადასხვა ღირებულებებით (start, center, end, stretch).
+
+დაკონტროლეთ როგორ იცვლება ყუთების ჰორიზონტალური განლაგება. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            columns: 2;
+            justify-items: center;
+            background-color: turquoise;
+            margin: 20vh
+        }
+        .box1 {
+            display: grid;
+            height: 30vh;
+            width: 20vh;
+            
+        }
+        .box2 {
+            display: grid;
+            height: 40vh;
+            width: 30vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container box1">
+        <p><center>gamarjoba</center></p>
+    </div>
+    <div class="container box2">
+        <p><center>naxvamdis</center></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- გრიდში გამოიყენეთ gap ან row-gap, column-gap.
+
+დააკვირდით ყუთებს შორის სივრცეს. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            columns: 2;
+            align-items: center;
+            background-color: turquoise;
+            gap: 20px
+            
+        }
+        .box1 {
+            height: 30vh;
+            width: 20vh;
+            column-gap: 20px;
+            
+        }
+        .box2 {
+            height: 40vh;
+            width: 30vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container box1">
+        <p><center>gamarjoba</center></p>
+    </div>
+    <div class="container box2">
+        <p><center>naxvamdis</center></p>
+    </div>
+</body>
+</html>

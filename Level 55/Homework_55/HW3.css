@@ -1,0 +1,19 @@
+/* შექმენით გრიდი 4 სვეტით.
+შიგნით მოათავსეთ 8 ყუთი, ზოგი დიდი, ზოგი პატარა.
+გამოიყენეთ grid-column: span რომ რამდენიმე ყუთი სვეტებს გაერთიანდეს.
+დაამატეთ მცირე სივრცე. */
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:10px;
+}
+
+.box{
+  background:lightblue;
+  height:80px;
+}
+
+.big{
+  grid-column: span 2;
+}

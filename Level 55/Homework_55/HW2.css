@@ -1,0 +1,27 @@
+/* შექმენით div.container.
+გამოიყენეთ display: grid.
+3 სვეტი და 3 რიგი.
+დაამატეთ 9 ყუთი სხვადასხვა ფერით.
+ცოტა სივრცე ყუთებს შორის (gap). */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+}
+
+.red {background:red;}
+.blue {background:blue;}
+.green {background:green;}
+.yellow {background:yellow;}
+.purple {background:purple;}
+.orange {background:orange;}
+.pink {background:pink;}
+.cyan {background:cyan;}
+.gray {background:gray;}
