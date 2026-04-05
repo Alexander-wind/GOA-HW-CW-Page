@@ -1,0 +1,25 @@
+<!-- შექმენი ღილაკი, რომელსაც hover-ზე ეცვლება
+ფერი, ზომა ან ჩრდილი. საჭიროა მცირე transition-იც. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: dodgerblue;
+            transition: 1.4s;
+            
+        }
+        button:hover {
+            background-color: violet;
+            transform:scale(0.92);
+        }
+    </style>
+</head>
+<body>
+    <button>Click me!</button>
+</body>
+</html>

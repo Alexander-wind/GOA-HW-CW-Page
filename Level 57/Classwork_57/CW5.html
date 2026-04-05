@@ -1,0 +1,35 @@
+<!-- input ველს focus-ზე გაუკეთე ფერადი outline. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: flex;
+            height: 10px;
+            align-items: center;
+            justify-content: center;
+            border: 0.5vh solid brown;
+            transition: 1.5s;
+        }
+        input:hover {
+            transform: scale(1.2);
+            transition: 1s;
+        }
+        input:focus {
+            border: 0.5vh solid lawngreen;
+            transform: scale(1.1);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="email">
+    </form>
+</body>
+</html>
