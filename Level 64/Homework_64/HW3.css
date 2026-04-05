@@ -1,0 +1,13 @@
+/* შექმენი ერთი ბლოკი (div)
+მიეცი ზომები (width, height)
+გამოიყენე position: relative  
+გადაადგილე ელემენტი top ან left ელემენტით კომრნტარებით  ახსენი, თუ როგორ ინარჩუნებს ელემენტი თავის ადგილს */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
