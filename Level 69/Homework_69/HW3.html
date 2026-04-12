@@ -1,0 +1,26 @@
+<!-- შექმენი რამდენიმე span ელემენტი და წამოიღე getElementsByTagName-ით. ყველას დანიშვნა ერთიანი font-size, ფერი, font-weight და letter-spacing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Text 1</span>
+<span>Text 2</span>
+<span>Text 3</span>
+
+<script>
+    let spans = document.getElementsByTagName("span");
+
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].style.fontSize = "20px";
+        spans[i].style.color = "darkblue";
+        spans[i].style.fontWeight = "bold";
+        spans[i].style.letterSpacing = "2px";
+}
+</script>
+</body>
+</html>

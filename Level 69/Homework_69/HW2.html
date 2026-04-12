@@ -1,0 +1,34 @@
+<!-- შექმენი სამი div ელემენტი კლასით feature-card და წამოიღე getElementsByClassName-ით. თითოეულს მიანიჭე სხვადასხვა ფონი, დაამატე padding, margin, border-radius, font-size, text-align, ფერი, border და box-shadow -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="feature-card">Card 1</div>
+<div class="feature-card">Card 2</div>
+<div class="feature-card">Card 3</div>
+
+<script>
+    let cards = document.getElementsByClassName("feature-card");
+
+    cards[0].style.background = "lightblue";
+    cards[1].style.background = "lightgreen";
+    cards[2].style.background = "lightcoral";
+
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].style.padding = "15px";
+        cards[i].style.margin = "10px";
+        cards[i].style.borderRadius = "10px";
+        cards[i].style.fontSize = "18px";
+        cards[i].style.textAlign = "center";
+        cards[i].style.color = "black";
+        cards[i].style.border = "1px solid #000";
+        cards[i].style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+}
+</script>
+</body>
+</html>
