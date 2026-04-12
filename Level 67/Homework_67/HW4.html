@@ -1,0 +1,29 @@
+<!-- შექმენი 5 <li> ელემენტი.
+getElementsByTagName("li")-ით წამოიღე ყველა ელემენტი და:
+ყველა <li>-ს გაუკეთე margin: 10px. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+
+<script>
+    let items = document.getElementsByTagName("li");
+
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.margin = "10px";
+    }
+</script>
+</body>
+</html>

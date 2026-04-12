@@ -1,0 +1,25 @@
+<!-- შექმენი 3 <div class="card"></div>.
+getElementsByClassName-ით წამოიღე ყველა card და:
+მხოლოდ პირველს გაუკეთე წითელი border, მეორეს მწვანე, მესამეს ლურჯი. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">Card 1</div>
+<div class="card">Card 2</div>
+<div class="card">Card 3</div>
+
+<script>
+    let cards = document.getElementsByClassName("card");
+
+    cards[0].style.border = "2px solid red";
+    cards[1].style.border = "2px solid green";
+    cards[2].style.border = "2px solid blue";
+</script>
+</body>
+</html>
