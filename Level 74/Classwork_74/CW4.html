@@ -1,0 +1,37 @@
+<!-- ასევე bounce ანიმაცია ჩამოსვლისას იყოს სწრაფი ასვლისას ნელი -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-size: 20px;
+            background-color: aquamarine;
+            border-radius: 50% ;
+            animation: bounce 1s infinite ease-in-out;
+            
+        }
+        @keyframes bounce {
+            0%, 20% {
+                transform: translateY(0px);
+            }
+            40%, 50% {
+                transform: translateY(200px);
+
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball">
+    </div>
+</body>
+</html>
