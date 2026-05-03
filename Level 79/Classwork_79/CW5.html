@@ -1,0 +1,31 @@
+<!-- შექმენი div ბლოკი და ::before-ით დაუმატე ფონზე ნახევრად გამჭვირვალე ფენა. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background: url("https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d") center/cover;
+      position: relative;
+    }
+
+    .box::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+
+</body>
+</html>
