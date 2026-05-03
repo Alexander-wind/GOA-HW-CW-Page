@@ -1,0 +1,32 @@
+<!-- CSS ცვლადები – ფერი და კიდეები
+პირობა:
+შექმენით ორი ყუთი (div) ზომით 150px x 150px.
+შექმენით ცვლადები:
+--main-color – ყუთის ფონისთვის
+--border-radius – ყუთის კიდეებისთვის
+გამოიყენეთ ცვლადები ორივე ყუთზე, ისე რომ მათი ფერი ან კიდეები მარტივად შეიცვალოს ცვლადის შეცვლით. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+     <style>
+  :root {
+    --main-color: teal;
+    --radius: 20px;
+  }
+</style>
+</head>
+<body>
+    <div class="w-[150px] h-[150px] m-2"
+        style="background: var(--main-color); border-radius: var(--radius)">
+    </div>
+
+    <div class="w-[150px] h-[150px] m-2"
+        style="background: var(--main-color); border-radius: var(--radius)">
+    </div>
+</body>
+</html>
