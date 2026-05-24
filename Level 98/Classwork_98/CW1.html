@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+
+  <button id="openBtn" class="px-4 py-2 bg-blue-500 text-white rounded">
+    Open
+  </button>
+
+  <div id="overlay" class="fixed inset-0 bg-black/50 hidden items-center justify-center">
+
+    <div id="modal" class="bg-white p-5 rounded shadow w-72 relative transition">
+      
+      <button id="closeBtn" class="absolute top-2 right-2">✕</button>
+
+      <h2 class="text-lg font-bold mb-2">Modal</h2>
+      <p>Your info has been sent</p>
+
+    </div>
+  </div>
+
+  <script>
+    const openBtn = document.getElementById("openBtn");
+    const closeBtn = document.getElementById("closeBtn");
+    const overlay = document.getElementById("overlay");
+    const modal = document.getElementById("modal");
+
+    openBtn.onclick = () => overlay.classList.remove("hidden");
+
+    closeBtn.onclick = () => overlay.classList.add("hidden");
+
+    overlay.onclick = () => overlay.classList.add("hidden");
+
+    modal.onclick = (e) => e.stopPropagation();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- შექმენი Signup Modal TailwindCSS-ის გამოყენებით. Modal თავიდან იყოს დამალული (hidden). გვერდზე გქონდეს ღილაკი "Sign Up", რომელზე დაჭერისას Modal გამოჩნდება. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <button id="openBtn" class="bg-blue-600 text-white px-6 py-2 rounded font-medium cursor-pointer">
+        Sign Up
+    </button>
+
+    <div id="modal" class="hidden fixed inset-0 flex items-center justify-center">
+        
+        <div id="overlay" class="absolute inset-0 bg-black opacity-40"></div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full relative z-10">
+            
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-xl font-bold">Sign Up</h3>
+                <button id="closeBtn" class="text-gray-500 hover:text-black font-bold text-xl cursor-pointer">✕</button>
+            </div>
+
+            <form class="space-y-4" onsubmit="event.preventDefault();">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" placeholder="example@mail.com" class="w-full p-2 border border-gray-300 rounded mt-1">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" placeholder="••••••••" class="w-full p-2 border border-gray-300 rounded mt-1">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded font-medium mt-2">
+                    Submit
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('overlay');
+
+        openBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+
+        const closeModal = () => modal.classList.add('hidden');
+
+        closeBtn.addEventListener('click', closeModal);
+        overlay.addEventListener('click', closeModal); 
+    </script>
+</body>
+</body>
+</html>
