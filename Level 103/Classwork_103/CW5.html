@@ -1,0 +1,44 @@
+<!-- შექმენი "Start" ღილაკი Tailwind სტილით. 
+ღილაკზე დაჭერის შემდეგ უნდა დაიწყოს countdown 3-დან 1-მდე, 
+თითოეულ წამში რიცხვი უნდა შეიცვალოს, 
+ხოლო ბოლოს უნდა გამოჩნდეს ტექსტი "Time's up!". -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen flex items-center justify-center flex-col gap-4">
+  <button id="startBtn" class="bg-purple-500 text-white px-6 py-2 rounded-xl">
+    Start
+  </button>
+  <p id="countdown" class="text-3xl"></p>
+</div>
+
+<script>
+  const startBtn = document.getElementById("startBtn");
+  const countdownText = document.getElementById("countdown");
+
+  startBtn.addEventListener("click", () => {
+    let num = 3;
+
+    countdownText.textContent = num;
+
+    let interval = setInterval(() => {
+      num--;
+
+      if (num > 0) {
+        countdownText.textContent = num;
+      } else {
+        countdownText.textContent = "Time's up!";
+        clearInterval(interval);
+      }
+    }, 1000);
+  });
+</script>
+</body>
+</html>

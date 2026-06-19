@@ -1,0 +1,29 @@
+<!-- შექმენი input და ღილაკი Tailwind სტილით. მომხმარებელი input-ში წერს ფერს (მაგ: red, blue, green) 
+ და ღილაკზე დაჭერისას უნდა შეიცვალოს მთელი გვერდის background ამ ფრად. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen flex items-center justify-center flex-col gap-4">
+  <input id="colorInput" class="border px-4 py-2 rounded" placeholder="Enter color (red, blue...)" />
+  <button id="colorBtn" class="bg-black text-white px-6 py-2 rounded-xl">
+    Change Background
+  </button>
+</div>
+
+<script>
+  const input = document.getElementById("colorInput");
+  const btn = document.getElementById("colorBtn");
+
+  btn.addEventListener("click", () => {
+    document.body.style.backgroundColor = input.value;
+  });
+</script>
+</body>
+</html>

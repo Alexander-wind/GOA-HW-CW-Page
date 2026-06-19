@@ -1,0 +1,31 @@
+<!-- შექმენი ღილაკი Tailwind სტილით, რომელიც მდებარეობს ეკრანის ცენტრში. 
+ღილაკზე დაჭერის შემდეგ ეკრანზე უნდა გამოჩნდეს შემთხვევითი რიცხვი 1-დან 10-მდე. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="h-screen flex items-center justify-center flex-col gap-4">
+  <button id="btn1" class="bg-blue-500 text-white px-6 py-2 rounded-xl">
+    Generate Number
+  </button>
+  <p id="result1" class="text-2xl"></p>
+</div>
+
+<script>
+  const btn1 = document.getElementById("btn1");
+  const result1 = document.getElementById("result1");
+
+  btn1.addEventListener("click", () => {
+    let random = Math.floor(Math.random() * 10) + 1;
+    result1.textContent = random;
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- შექმენი Tailwind-ით სტილიზებული კვადრატი (div), რომელიც თავიდან არის პატარა ზომის. 
+ მასზე დაჭერისას უნდა გაიზარდოს ზომაში და შემდეგი დაჭერისას ისევ დაუბრუნდეს საწყის ზომას. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="h-screen flex items-center justify-center">
+  <div id="box" class="w-20 h-20 bg-green-500 transition-all duration-300 cursor-pointer"></div>
+</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("click", () => {
+    box.classList.toggle("w-40");
+    box.classList.toggle("h-40");
+  })
+</script>
+</body>
+</html>

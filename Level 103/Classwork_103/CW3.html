@@ -1,0 +1,32 @@
+<!-- შექმენი "Like " ღილაკი Tailwind სტილით. 
+ ღილაკზე ყოველი დაჭერისას უნდა გაიზარდოს ლაიქების რაოდენობა და ეკრანზე უნდა გამოჩნდეს რამდენი ლაიქია. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen flex items-center justify-center flex-col gap-4">
+  <button id="likeBtn" class="bg-pink-500 text-white px-6 py-2 rounded-xl">
+     Like
+  </button>
+  <p id="likes" class="text-xl">Likes: 0</p>
+</div>
+
+<script>
+  const likeBtn = document.getElementById("likeBtn");
+  const likesText = document.getElementById("likes");
+
+  let count = 0;
+
+  likeBtn.addEventListener("click", () => {
+    count++;
+    likesText.textContent = "Likes: " + count;
+  });
+</script>
+</body>
+</html>
